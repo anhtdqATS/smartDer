@@ -8,7 +8,7 @@ import BaseButton from "@/components/BaseButton.vue";
 import { mdiChartTimelineVariant, mdiConnection } from "@mdi/js";
 
 const listItem = [
-  { label: "", img: "/public/img/1_toan-canh-du-an-1.jpg" },
+  { label: "", img: "/img/1_toan-canh-du-an-1.jpg" },
   { label: "", img: "/img/LN2.jpg" },
   { label: "", img: "/img/SPP.jpg" },
 ];
