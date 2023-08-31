@@ -245,7 +245,7 @@ const updateSetting = () => {
                   <input
                     placeholder="Prefix"
                     class="bg-[#f5f7fa] border-b-[#f5f7fa] border-y-[1px] focus:border-b-[#f5f7fa] focus:outline-none w-12 text-center"
-                    v-model="
+                    v-model.number="
                       formNetwork.eth0.ipv4.addresses[0].prefix
                     " /></template
               ></el-input>
@@ -256,7 +256,7 @@ const updateSetting = () => {
                   <input
                     placeholder="Metric"
                     class="bg-[#f5f7fa] border-b-[#f5f7fa] border-y-[1px] focus:border-b-[#f5f7fa] focus:outline-none w-12 text-center"
-                    v-model="formNetwork.eth0.ipv4.gateways[0].metric"
+                    v-model.number="formNetwork.eth0.ipv4.gateways[0].metric"
                 /></template>
               </el-input>
             </el-form-item>
@@ -295,7 +295,7 @@ const updateSetting = () => {
                   <input
                     placeholder="Prefix"
                     class="bg-[#f5f7fa] border-b-[#f5f7fa] border-y-[1px] focus:border-b-[#f5f7fa] focus:outline-none w-12 text-center"
-                    v-model="
+                    v-model.number="
                       formNetwork.eth1.ipv4.addresses[0].prefix
                     " /></template
               ></el-input>
@@ -306,7 +306,7 @@ const updateSetting = () => {
                   <input
                     placeholder="Metric"
                     class="bg-[#f5f7fa] border-b-[#f5f7fa] border-y-[1px] focus:border-b-[#f5f7fa] focus:outline-none w-12 text-center"
-                    v-model="formNetwork.eth1.ipv4.gateways[0].metric"
+                    v-model.number="formNetwork.eth1.ipv4.gateways[0].metric"
                 /></template>
               </el-input>
             </el-form-item>
@@ -351,7 +351,7 @@ const updateSetting = () => {
                   <input
                     placeholder="Prefix"
                     class="bg-[#f5f7fa] border-b-[#f5f7fa] border-y-[1px] focus:border-b-[#f5f7fa] focus:outline-none w-12 text-center"
-                    v-model="
+                    v-model.number="
                       formNetwork.br.ipv4.addresses[0].prefix
                     " /></template
               ></el-input>
@@ -362,7 +362,7 @@ const updateSetting = () => {
                   <input
                     placeholder="Metric"
                     class="bg-[#f5f7fa] border-b-[#f5f7fa] border-y-[1px] focus:border-b-[#f5f7fa] focus:outline-none w-12 text-center"
-                    v-model="formNetwork.br.ipv4.gateways[0].metric"
+                    v-model.number="formNetwork.br.ipv4.gateways[0].metric"
                 /></template>
               </el-input>
             </el-form-item>
