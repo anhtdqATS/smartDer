@@ -7,7 +7,7 @@ import GatewayInfoView from "../components/GatewayInfoView.vue";
 import SystemTime from "../components/SystemTimeView.vue";
 import NTPSetting from "../components/NTPSettingView.vue";
 import Metering from "../components/MeteringView.vue";
-
+import setDashboard from "../components/setDashboard.vue";
 import { mdiLinkVariantPlus } from "@mdi/js";
 
 const activeName = ref("first");
@@ -34,6 +34,9 @@ const activeName = ref("first");
           ></el-tab-pane>
           <el-tab-pane label="Metering" name="fourth"
             ><Metering></Metering
+          ></el-tab-pane>
+          <el-tab-pane label="Gateway Channel" name="five"
+            ><setDashboard></setDashboard
           ></el-tab-pane>
         </el-tabs>
       </CardBox>

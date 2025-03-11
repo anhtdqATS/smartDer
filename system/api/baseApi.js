@@ -2,25 +2,32 @@
 import repository from "@/Base/repository.js";
 const resource = "/api/gw";
 
-const resourceSystem = "api/smartder/systemtime";
-const resourceNTP = "api/smartder/ntp";
 export default {
-  getSystemTime() {
-    return repository.get(`${resourceSystem}`);
+  getSystemTime(payload) {
+    return repository.post(`${resource}`, payload);
   },
   setSystemTime(payload) {
-    return repository.post(`${resourceSystem}`, payload);
+    return repository.post(`${resource}`, payload);
   },
-  getNTPSetting() {
-    return repository.get(`${resourceNTP}`);
+  getNTPSetting(payload) {
+    return repository.post(`${resource}`, payload);
   },
   setNTPSetting(payload) {
-    return repository.post(`${resourceNTP}`, payload);
+    return repository.post(`${resource}`, payload);
   },
   getMetering(payload) {
     return repository.post(`${resource}`, payload);
   },
   updateMetering(payload) {
+    return repository.post(`${resource}`, payload);
+  },
+  setChannelDashboard(payload) {
+    return repository.post(`${resource}`, payload);
+  },
+  getChannelList(payload) {
+    return repository.post(`${resource}`, payload);
+  },
+  getDashboardChannel(payload) {
     return repository.post(`${resource}`, payload);
   },
 };
